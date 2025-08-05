@@ -1,27 +1,27 @@
 """GUI for the upload of module glue weight test in Vancouver."""
 
 import numpy as np
-import csv
 import tkinter as tk
 import math
-import os
 from tkinter import filedialog
 import itkdb
 from datetime import datetime
 from tkinter.constants import DISABLED, NORMAL
 from tkinter import END
 
-# VARIABLES TO EDIT
+# VARIABLES TO EDIT - MODIFY THESE!
 GW_METHOD = "Stencil"
-GLUE_METHOD_V_H1 = "Production - No Glue Dots"
-GLUE_METHOD_V_H2 = "Production - No Glue Dots"
-GLUE_METHOD_V_PB = "Production - No Glue Dots"
 INSTITUTE = 'SFU'
 
 # CONSTANTS
 ENTRY_X = 100
 ENTRY_Y = 20
+# following isn't currently used
+GLUE_METHOD_V_H1 = ""
+GLUE_METHOD_V_H2 = ""
+GLUE_METHOD_V_PB = ""
 
+# Define glue limit thicknesses - values are based on TB 120um target glue thicknesses
 # 3R is H0 and H2
 # 3L is H1 and H3
 
