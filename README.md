@@ -92,5 +92,7 @@ For modules with 2 hybrids and no powerboard (3L), you need to enter all of the 
 For modules with 1 hybrid and no powerboard (4L and 5L), you need to enter all of the following weights: 
 * bare sensor weight, hybrid 1 weight, module with 1 hybrid    
 
+
+
 After the all the required values are entered, press the "Calculate" button. The calculated glue weights will appear, the pass status will appear in the textbox at the bottom of the GUI. 
 Press the "Save Data" button if you wish to proceed with uploading the test. 
