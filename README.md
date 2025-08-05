@@ -78,19 +78,19 @@ python3 glue_weights_upload.py
 The GUI will pop up and request that you enter the serial number, run number, stencil version used and the weights that were taken during module assembly. You do not have to fill in every single value.
 
 For modules with 2 hybrids and powerboard (R0, R1 and 3R), you need to enter one of the following combinations: 
-    + bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 2 hybrids weight, module with 2 hybrids and powerboard
-    + bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with powerboard weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
-    + bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
+* bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 2 hybrids weight, module with 2 hybrids and powerboard  
+* bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with powerboard weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
+* bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
 
 For modules with 1 hybrid and 1 powerboard (R2, 4R, 5R), you need to enter one of the following combinations: 
-    - bare sensor weight, hybrid 1 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard
-    - bare sensor weight, hybrid 1 weight, powerboard weight, module with powerboard weight, module with 1 hybrid and powerboard
+* bare sensor weight, hybrid 1 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard
+* bare sensor weight, hybrid 1 weight, powerboard weight, module with powerboard weight, module with 1 hybrid and powerboard
 
 For modules with 2 hybrids and no powerboard (3L), you need to enter all of the following weights: 
-    - bare sensor weight, hybrid 1 weight, module with 1 hybrid, module with 2 hybrids  
+* bare sensor weight, hybrid 1 weight, module with 1 hybrid, module with 2 hybrids  
 
 For modules with 1 hybrid and no powerboard (4L and 5L), you need to enter all of the following weights: 
-    - bare sensor weight, hybrid 1 weight, module with 1 hybrid    
+* bare sensor weight, hybrid 1 weight, module with 1 hybrid    
 
 After the all the required values are entered, press the "Calculate" button. The calculated glue weights will appear, the pass status will appear in the textbox at the bottom of the GUI. 
 Press the "Save Data" button if you wish to proceed with uploading the test. 
