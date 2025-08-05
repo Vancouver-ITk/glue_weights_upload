@@ -73,14 +73,14 @@ Linux/MAC:
 python3 glue_weights_upload.py
 ```
 
-# Instructions
+# GUI Instructions
 
 The GUI will pop up and request that you enter the serial number, run number, stencil version used and the weights that were taken during module assembly. You do not have to fill in every single value.
 
 For modules with 2 hybrids and powerboard (R0, R1 and 3R), you need to enter one of the following combinations: 
-    - bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 2 hybrids weight, module with 2 hybrids and powerboard
-    - bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with powerboard weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
-    - bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
+    + bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 2 hybrids weight, module with 2 hybrids and powerboard
+    + bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with powerboard weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
+    + bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
 
 For modules with 1 hybrid and 1 powerboard (R2, 4R, 5R), you need to enter one of the following combinations: 
     - bare sensor weight, hybrid 1 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard
