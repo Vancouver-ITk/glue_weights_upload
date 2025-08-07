@@ -81,6 +81,7 @@ For modules with 2 hybrids and powerboard (R0, R1 and 3R), you need to enter one
 * bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 2 hybrids weight, module with 2 hybrids and powerboard  
 * bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with powerboard weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
 * bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard weight, module with 2 hybrids and powerboard
+* bare sensor weight, hybrid 1 weight, hybrid 2 weight, powerboard weight, modules with both hybrids, module with 2 hybrids and powerboard
 
 For modules with 1 hybrid and 1 powerboard (R2, 4R, 5R), you need to enter one of the following combinations: 
 * bare sensor weight, hybrid 1 weight, powerboard weight, module with 1 hybrid weight, module with 1 hybrid and powerboard
