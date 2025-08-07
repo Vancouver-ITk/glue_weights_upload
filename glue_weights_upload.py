@@ -122,6 +122,8 @@ def get_parameters():
     if pb.get() != '': 
         results['GW_PB'] = float(pb.get()) # weight of powerboard
         results['GW_MODULE_H1PB'] = float(mod_w_hyb1_pb.get()) # weight ofmodule with one hybrid and powerboard 
+    if mod_w_hyb1_hyb2.get != '': 
+        results['GW_MODULE_H1H2'] = float(mod_w_hyb1_hyb2.get())  
     if total_mod.get() != '': results['GW_MODULE_H1H2PB'] = float(total_mod.get()) # weight of module with 2 hybrids and powerboard 
     if mod_w_hyb1.get() != '': results['GW_MODULE_H1'] = float(mod_w_hyb1.get()) # weight of module with 1 hybrid
     if mod_w_pb.get() != '': results['GW_MODULE_PB'] = float(mod_w_pb.get()) # weight of module with powerboard
@@ -180,6 +182,9 @@ def calculate_glue_weights():
             results['GW_GLUE_H2'] = results['GW_MODULE_H1H2PB'] - results['GW_MODULE_H1PB'] - results['GW_HYBRID2']
             # get weight under pb 
             results['GW_GLUE_PB'] = results['GW_MODULE_PB'] - results['GW_SENSOR'] - results['GW_PB']
+
+            results['GW_GLUE_H1H2'] = results['GW_GLUE_H1'] + results['GW_GLUE_H2']
+            results['GW_GLUE_H1H2PB'] = results['GW_GLUE_H1'] + results['GW_GLUE_H2'] + results['GW_GLUE_PB']
         # case 3
         elif (mod_w_hyb1.get() != '') and (mod_w_hyb1_pb.get() != '') and (mod_w_pb.get() == ''):    
             # get weight under first hybrid 
@@ -188,11 +193,21 @@ def calculate_glue_weights():
             results['GW_GLUE_H2'] = results['GW_MODULE_H1H2PB'] - results['GW_MODULE_H1PB'] - results['GW_HYBRID2']
             # get weight under pb 
             results['GW_GLUE_PB'] = results['GW_MODULE_H1PB'] - results['GW_MODULE_H1'] - results['GW_PB'] 
+
+            results['GW_GLUE_H1H2'] = results['GW_GLUE_H1'] + results['GW_GLUE_H2']
+            results['GW_GLUE_H1H2PB'] = results['GW_GLUE_H1'] + results['GW_GLUE_H2'] + results['GW_GLUE_PB']
+        # case 4
+        elif (mod_w_hyb1_hyb2.get() != '') and (total_mod.get() != '') and (mod_w_hyb1.get() == '') and (mod_w_pb.get() == ''):    
+            # get weight under both hybrids
+            results['GW_GLUE_H1H2'] = results['GW_MODULE_H1H2'] - results['GW_HYBRID1'] - results['GW_HYBRID2']
+            # get weight under pb 
+            results['GW_GLUE_PB'] = results['GW_MODULE_H1H2PB'] - results['GW_MODULE_H1H2'] - results['GW_PB']
+
+            results['GW_GLUE_H1H2PB'] = results['GW_GLUE_H1H2'] + results['GW_GLUE_PB']    
         else: 
             print("Not enough values provided to calculate glue weight under each component.")        
 
-        results['GW_GLUE_H1H2'] = results['GW_GLUE_H1'] + results['GW_GLUE_H2']
-        results['GW_GLUE_H1H2PB'] = results['GW_GLUE_H1'] + results['GW_GLUE_H2'] + results['GW_GLUE_PB']
+        
 
         print("Glue weight under hybrid 1: {0}".format(results['GW_GLUE_H1']))   
         print("Glue weight under hybrid 2: {0}".format(results['GW_GLUE_H2']))  
